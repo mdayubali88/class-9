@@ -120,6 +120,10 @@ header.bg-transparent{
         h2.heading{
             text-align: var(--center);
             font-size: 48px;
+            text-transform: uppercase;
+            span{
+                color: #E67A1A;
+            }
         }
         p.text{
             width: 50%;
