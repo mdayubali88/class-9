@@ -56,7 +56,10 @@ header.bg-transparent {
         text-decoration: none;
         display: inline-block;
         font-size: 18px;
+        color: #0b0b0b;
         text-transform: capitalize; }
+        .navbar__nav__items .navbar__nav__items--link:hover {
+          color: #E67A1A; }
       .navbar__nav__items.dropdown {
         position: relative; }
         .navbar__nav__items.dropdown .dropdown__menu {
@@ -73,7 +76,7 @@ header.bg-transparent {
             .navbar__nav__items.dropdown .dropdown__menu__items--link {
               color: #1c1d1d; }
               .navbar__nav__items.dropdown .dropdown__menu__items--link:hover {
-                color: red; }
+                color: #E67A1A; }
         .navbar__nav__items.dropdown:hover .dropdown__menu {
           border-top: 5px solid #1c1d1d;
           opacity: 1;

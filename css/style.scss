@@ -61,13 +61,16 @@ header.bg-transparent{
                 text-decoration: none;
                 display: inline-block;
                 font-size: 18px;
+                color: rgb(11, 11, 11);
                 text-transform: capitalize;
+                &:hover{
+                    color:#E67A1A;
+                }
             }
             &.dropdown{
                 position: relative;
                 .dropdown__menu{
-                    position: absolute;
-                    
+                    position: absolute;   
                     width: 100%;
                     background-color: rgb(255, 255, 255);
                     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -80,7 +83,7 @@ header.bg-transparent{
                         &--link{
                             color: rgb(28, 29, 29);
                             &:hover{
-                                color: red;
+                                color:#E67A1A;
                             }
                         }
                         
