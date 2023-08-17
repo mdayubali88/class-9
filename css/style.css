@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --d-flex: flex;
+    --center: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: blue;
+}
+
+header.bg-transparent {
+    background-color: rgba(255, 255, 255, 0.012);
+}
+
+.container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 100%;
+    min-height: 80px;
+    z-index: 999;
+}
+
+.navbar__logo {
+    width: 20%;
+}
+
+.navbar__nav {
+    width: 80%;
+    display: var(--d-flex);
+    justify-content: center;
+}
+
+.navbar__nav__items {
+    list-style: none;
+    margin-inline-end: 20px;
+}
+
+.navbar__nav__items .navbar__nav__items--link {
+    padding-inline: 15px;
+    padding-block: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.navbar__nav__items.dropdown {
+    position: relative;
+}
+
+.navbar__nav__items.dropdown .dropdown__menu {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.navbar__nav__items.dropdown .dropdown__menu__items {
+    padding: 8px 15px;
+    transition: all;
+}
+
+.navbar__nav__items.dropdown .dropdown__menu__items--link {
+    color: #1c1d1d;
+}
+
+.navbar__nav__items.dropdown .dropdown__menu__items--link:hover {
+    color: red;
+}
+
+.navbar__nav__items.dropdown:hover .dropdown__menu {
+    border-top: 5px solid #1c1d1d;
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar__mmenu {
+    width: 20%;
+    display: var(--d-flex);
+    justify-content: end;
+}
+
+.navbar__mmenu span {
+    font-size: 30px;
+}
+
+.banner {
+    position: absolute;
+    padding-top: 120px;
+    display: var(--d-flex);
+    justify-content: center;
+    z-index: -1;
+}
+
+.banner__image {
+    background: url("../images/banner.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner__image h2.heading {
+    text-align: var(--center);
+    font-size: 48px;
+}
+
+.banner__image p.text {
+    width: 50%;
+    text-align: var(--center);
+    margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
